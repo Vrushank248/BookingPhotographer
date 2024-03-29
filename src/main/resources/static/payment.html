@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Page</title>
+  <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+  <div class="payment-container">
+    <h1>PAYMENT GATEWAY</h1>
+    <input type="text" id="card-number" placeholder="Enter card number" maxlength="16">
+    <input type="text" id="expiry-date" placeholder="MM/YY">
+    <input type="password" id="cvv" placeholder="Enter CVV" maxlength="3">
+    
+    <button onclick="processPayment1()" ondblclick="processPayment()">Pay Now</button>
+    <audio id="shutterSound" src="paymentsound.mp3"></audio>
+  </div>
+
+  <script src="payment.js"></script>
+</body>
+</html>

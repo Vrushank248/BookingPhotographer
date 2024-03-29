@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("background.jpeg");
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+}
+
+.payment-container {
+    padding: 30px;
+    border-radius: 25px;
+    border: 8px solid #020303;
+    background-image: url("main1.jpeg");
+    box-shadow: -5px -5px rgba(255, 237, 41, 0.238),
+    5px 5px 15px rgba(182, 165, 38, 0.35),
+    inset -5px -5px rgba(255, 237, 41, 0.238),
+    inset 5px 5px 15px rgba(182, 165, 38, 0.35);
+}
+
+.payment-container h1 {
+    color: #000;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.payment-container label {
+    position: absolute;
+    left: 10px;
+    padding: 8px 10px;
+    pointer-events: none;
+    font-size: 1em;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    color: #000;
+}
+
+.payment-container input {
+    padding: 12px 10px;
+    border: none;
+    width: 100%;
+    background: #efdded;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #000;
+    font-weight: 600;
+    border-radius: 25px;
+    font-size: 1em;
+    box-shadow: -5px -5px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.35);
+    transition: 0.5s;
+    outline: none;
+}
+
+.payment-container button {
+    background: #FF10F0;
+    color: #223243;
+    padding: 10px 0;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    box-shadow: -5px 5px 15px rgba(246, 27, 191, 0.7),
+    5px 5px 15px rgba(240, 55, 218, 0.496),
+    inset -5px -5px 15px rgba(246, 14, 211, 0.808),
+    inset 5px 5px 15px rgba(237, 23, 169, 0.825);
+    width: 100%;
+}
+
+.payment-container p {
+    color: #fff;
+    font-size: 0.75em;
+    font-weight: 300;
+    text-align: center;
+}
+
+.payment-container p a {
+    font-weight: 500;
+    color: #fff;
+}
+
+.payment-container p a:hover {
+    color: red;
+    font-size: 15px;
+}

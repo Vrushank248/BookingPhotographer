@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(rolePage.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+}
+
+h1{
+        text-align: center; 
+        font-size: 45px;
+        font-weight:900;
+        background: linear-gradient(240deg, #f573fc, #439ce9);     
+        color: transparent;
+        background-position: 25vh;
+        background-clip: text;
+        -webkit-background-clip: text;      
+}
+
+label{
+    background:rgba(246, 240, 240, 0.003);
+    color: rgb(245, 234, 245);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 20%;
+    left: 55%;
+    font-size: 28px;
+    font-weight:700;
+}
+
+select{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 30%;
+    left: 55%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 305px;
+    padding: 10px 20px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    background-color: transparent;
+    color:ghostwhite;
+    border: 6px solid #d64680;
+    border-radius: 10px;
+    background-image: url("arrow-down.png");
+    background-repeat: no-repeat;
+    background-size: 47px;
+    background-position: 247px 0.5px;
+    outline: none;
+    box-shadow: 0 0 20px rgba(20,20,30,0.25);
+}
+select::-ms-expand{
+    display: none;
+}
+select:hover{
+    border: 6px solid #ff66a3;
+}
+select option{
+    background-color: transparent;
+    letter-spacing: 1.2px;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgb(226, 47, 128);
+    
+}
+.selected{
+    display: none;
+}
+
+
+a:link {
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #280312;
+    color: hotpink;
+    letter-spacing: 1.2px;
+    padding-inline: 10px;
+    font-weight: 400;
+    font-size: 28px;
+    position:relative;
+    top: 30vh;
+    left:47%;
+    transition: color 0.3s ease;
+  }
+  
+
+  a:visited {
+    color: red;
+  }
+  
+
+  a:hover {
+    color: #007bff;
+    font-size:30px;
+    text-transform: uppercase;
+  }
+  
+ 

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MySQL Data in Card</title>
+    <style>
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 400px;
+        }
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        .container {
+            padding: 2px 16px;
+        }
+    </style>
+</head>
+<body>
+    <div id="myTables"></div>
+<form action="payment.html"><input type="submit">Book Now</form>
+    <script>
+        fetch('/api/my')
+            .then(response => response.json())
+            .then(data => {
+                const myTablesDiv = document.getElementById('myTables');
+                data.forEach(myTable => {
+                    const card = document.createElement('div');
+                    card.className = 'card';
+                    const container = document.createElement('div');
+                    container.className = 'container';
+                    container.innerHTML = `
+                    	<h2>${myTable.name}</h2>
+                        <p>${myTable.id}</p>
+                        <p>${myTable.address}</p>
+                        <p>${myTable.contact}</p>
+                        <p>${myTable.email}</p>
+                        <p>${myTable.images}</p>
+                        <p>${myTable.speciality}</p>
+                        <p>${myTable.price}</p>
+                    `;
+                    card.appendChild(container);
+                    myTablesDiv.appendChild(card);
+                });
+            });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+				
